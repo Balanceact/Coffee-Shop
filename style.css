@@ -10,16 +10,20 @@ body {
     background-image: url(assets/hot.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
     margin-bottom: 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 
 .Juicy {
     background-image: url(assets/juicy.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
     margin-bottom: 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 
 .Cosy {
@@ -27,28 +31,63 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.vertical {
+    display: flex;
+    width: 1000px;
+    height: 100vh;
+    flex-direction: column;
 }
 
 .title-card {
     color: #8D0001;
     font-family: "Spirax", sans-serif;
-    font-size: 6rem;
+    font-size: 8rem;
     font-weight: bold;
+    flex: 10;
+    display: flex;
+    justify-content: center;
 }
 
 .descriptor {
     background-color: #8D0001;
-    opacity: 0.90;
+    font-size: 1.82rem;
+    text-align: center;
+    opacity: 0.75;
+    flex: 1;
+    margin: 15px;
+    padding: 20px;
 }
 
-.left {
+.menu {
+    background-color: black;
+    display: flex;
+    font-size: 1.6rem;
+    opacity: 0.75;
+    flex: 3;
+    margin: 15px 110px 110px 110px;
+    padding: 25px 70px 10px 70px;
+    justify-content: space-between
 
 }
 
-.right {
-
+.bottom {
+    align-self: flex-end;
+    margin-bottom: 25px;
 }
 
-.center {
+.descriptor.left {
+    margin-right: 220px;
+}
 
+.descriptor.right {
+    margin-left: 220px;
+}
+
+.menu-divider {
+    display: flex;
+    flex-direction: column;
 }
