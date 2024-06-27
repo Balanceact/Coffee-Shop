@@ -1,0 +1,54 @@
+/* Red = #8D0001 */
+body {
+    background-color: #8D0001;
+    color: white;
+    font-family: "Poiret One", sans-serif;
+    margin: 0;
+}
+
+.Hot {
+    background-image: url(assets/hot.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin-bottom: 20px;
+}
+
+.Juicy {
+    background-image: url(assets/juicy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin-bottom: 20px;
+}
+
+.Cosy {
+    background-image: url(assets/cosy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.title-card {
+    color: #8D0001;
+    font-family: "Spirax", sans-serif;
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+.descriptor {
+    background-color: #8D0001;
+    opacity: 0.90;
+}
+
+.left {
+
+}
+
+.right {
+
+}
+
+.center {
+
+}
