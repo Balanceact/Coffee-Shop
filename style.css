@@ -1,4 +1,4 @@
-/* Red = #8D0001 */
+/* ########## Body ########## */
 body {
     background-color: #8D0001;
     color: white;
@@ -6,43 +6,61 @@ body {
     margin: 0;
 }
 
-.Hot {
+/* ########## Header ########## */
+.header-container {
+    display: flex;
+    position: fixed;
+    height: 85px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #1d060caf;
+}
+
+.header-container .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.nav-link {
+    font-family: "Spirax", sans-serif;
+    font-size: 3rem;
+    text-decoration: none;
+    color: white;
+}
+
+/* ########## Main ########## */
+.page {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.page.hot {
     background-image: url(assets/hot.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     margin-bottom: 20px;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
 }
 
-.Juicy {
+.page.juicy {
     background-image: url(assets/juicy.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     margin-bottom: 20px;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
 }
 
-.Cosy {
+.page.cosy {
     background-image: url(assets/cosy.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
 }
 
-.vertical {
+.page .vertical {
     display: flex;
     width: 1000px;
     height: 100vh;
     flex-direction: column;
 }
 
-.title-card {
+.page .vertical .title-card {
     color: #8D0001;
     font-family: "Spirax", sans-serif;
     font-size: 8rem;
@@ -52,17 +70,32 @@ body {
     justify-content: center;
 }
 
-.descriptor {
+.page .vertical .title-card .bottom {
+    align-self: flex-end;
+    margin-bottom: 25px;
+}
+
+.page .vertical .descriptor {
     background-color: #8D0001;
     font-size: 1.82rem;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     opacity: 0.75;
     flex: 1;
     margin: 15px;
     padding: 20px;
 }
 
-.menu {
+.page .vertical .descriptor.left {
+    margin-right: 220px;
+}
+
+.page .vertical .descriptor.right {
+    margin-left: 220px;
+}
+
+.page .vertical .menu {
     background-color: black;
     display: flex;
     font-size: 1.6rem;
@@ -71,23 +104,13 @@ body {
     margin: 15px 110px 110px 110px;
     padding: 25px 70px 10px 70px;
     justify-content: space-between
-
 }
 
-.bottom {
-    align-self: flex-end;
-    margin-bottom: 25px;
-}
-
-.descriptor.left {
-    margin-right: 220px;
-}
-
-.descriptor.right {
-    margin-left: 220px;
-}
-
-.menu-divider {
+.page .vertical .menu .menu-divider {
     display: flex;
     flex-direction: column;
+}
+
+.page .vertical .menu .menu-divider.right {
+    text-align: right;
 }
