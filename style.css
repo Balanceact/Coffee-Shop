@@ -13,8 +13,10 @@ body {
     height: 85px;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    left: 0;
+    right: 0;
     background-color: #1d060caf;
+    z-index: 2;
 }
 
 .header-container .nav-bar {
